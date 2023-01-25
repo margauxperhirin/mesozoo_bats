@@ -1,9 +1,12 @@
 # mesozoo_bats
 Scripts and raw data used in "Morphological and taxonomic diversity of mesozooplankton is an important driver of carbon export fluxes in the ocean"
 
-Authors : Margaux Perhirin$^{1}$ \*, Hannah Gossner$^{2}$, Jessica Godfrey$^{2}$, Rodney Johnson$^{2}$, Leocadio Blanco-Bercial$^{2}$, Sakina-Dorothée Ayata$^{1}$
+Authors : Margaux Perhirin $^{1}$ \*, Hannah Gossner $^{2}$, Jessica Godfrey $^{2}$, Rodney Johnson $^{2}$, Leocadio Blanco-Bercial $^{2}$, Sakina-Dorothée Ayata $^{1}$
+
 $^{1}$ Sorbonne Université, UMR 7159 CNRS-IRD-MNHN, LOCEAN-IPSL, Paris, France
+
 $^{2}$ Bermuda Institute of Ocean Sciences, St. Georges, Bermuda
+
 \* corresponding author: margaux.perhirin@locean.ipsl.fr
 
 
