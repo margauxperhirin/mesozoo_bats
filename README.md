@@ -1,5 +1,5 @@
 # mesozoo_bats
-Scripts and raw data used in "Morphological and taxonomic diversity of mesozooplankton is an important driver of carbon export fluxes in the ocean"
+Scripts and raw data for the manuscript "Morphological and taxonomic diversity of mesozooplankton is an important driver of carbon export fluxes in the ocean"
 
 Authors : Margaux Perhirin $^{1}$ \*, Hannah Gossner $^{2}$, Jessica Godfrey $^{2}$, Rodney Johnson $^{2}$, Leocadio Blanco-Bercial $^{2}$, Sakina-Dorothée Ayata $^{1}$
 
@@ -20,3 +20,8 @@ In this GitLab, you can find :
 You can see the links between the given files (in black), the new ones (in grey), the figures/tables (in green) and the .R scripts (in blue) in the following scheme.
 
 ![GH_schema](https://user-images.githubusercontent.com/97614755/214528953-480ba12d-ee95-4835-9909-17d5bcf538cf.jpg)
+
+
+If you have any questions, please contact the corresponding author.
+
+Please cite the manuscript if using this code, partially or in its totality.
