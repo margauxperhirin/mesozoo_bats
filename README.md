@@ -12,7 +12,7 @@ $^{2}$ Bermuda Institute of Ocean Sciences, St. Georges, Bermuda
 \* corresponding author: margaux.perhirin@locean.ipsl.fr
 
 
-# How does it work ?
+## How does it work ?
 
 In this GitHub, you can find :
 * Data : all the raw data files needed for the scripts to be run, other files will be produced during the analysis
