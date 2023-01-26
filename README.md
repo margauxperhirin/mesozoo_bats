@@ -14,18 +14,27 @@ $^{2}$ Bermuda Institute of Ocean Sciences, St. Georges, Bermuda
 
 # How does it work ?
 
-In this GitLab, you can find :
+In this GitHub, you can find :
 * Data : all the raw data files needed for the scripts to be run, other files will be produced during the analysis
 * Scripts : 
   * the mothur pipeline to treat metabarcoding sequences
-  * all the R scripts needed to realise the analyses 
-* Function : a function created for this study 
+  * all the R scripts necessary to realise the analyses and which should be run in the following order 
+    1. formatting_imaging.R
+    2. formatting_metadata.R
+    3. met_plots.R
+    4. formatting_molecular.R
+    4. mol_pcoa-clusters.R
+    5. img_morphospace.R
+    6. img_carbon.R
+    7. mol_network-modules.R
+    8. img_mol_comparison.R
+* Function : a function used in mol_network-modules.R 
 
 You can see the links between the given files (in black), the new ones (in grey), the figures/tables (in green) and the .R scripts (in blue) in the following scheme.
 
 ![GH_schema](https://user-images.githubusercontent.com/97614755/214528953-480ba12d-ee95-4835-9909-17d5bcf538cf.jpg)
 
 
-If you have any questions, please contact the corresponding author.
+If you have any questions, please contact the corresponding author. Funded by NSF [OCE-1829318](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829318), [OCE-17561058](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1756105) and [OCE-1522206](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1522206) , and [Simons Foundation International BIOS-SCOPE](https://scope.bios.edu/), [FORMAL](https://iscd.sorbonne-universite.fr/research/sponsored-junior-teams/formal-2/), and the project [ANR TraitZoo](https://anr.fr/Projet-ANR-22-CE02-0023).
 
 Please cite the manuscript if using this code, partially or in its totality.
