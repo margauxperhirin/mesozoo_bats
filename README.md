@@ -17,7 +17,7 @@ $^{2}$ Bermuda Institute of Ocean Sciences, St. Georges, Bermuda
 In this GitHub, you can find :
 * Data : all the raw data files needed for the scripts to be run, other files will be produced during the analysis
 * Scripts : 
-  * the mothur pipeline to treat metabarcoding sequences
+  * the mothur pipeline to treat metabarcoding sequences (ts.txt)
   * all the R scripts necessary to realise the analyses and which should be run in the following order 
     1. formatting_imaging.R
     2. formatting_metadata.R
