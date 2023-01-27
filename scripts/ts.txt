@@ -1,0 +1,36 @@
+#run in mothur v.1.44.3. Be aware new Mothur versions changed how the software handle some steps. Running it with newer versions would then need some minor modifications in the pipeline (e.g., new versions use count file system instead of name file system)
+#make contigs with the file created according to mothur instructions with make.file
+#no need to trim overlaps, since these are MEFIT preprocessed files and F & R are identical
+make.contigs(file=TS, deltaq=10, insert=30, trimoverlap=F)
+summary.seqs(fasta=current)
+#remove short reads, or those with any ambiguity or excess of homopolymers - in two steps
+screen.seqs(fasta=current, group=current, maxambig=0, maxhomop=10, contigsreport=current)
+summary.seqs(fasta=current)
+screen.seqs(fasta=current, group=current, minlength=300)
+summary.seqs(fasta=current)
+#align to the V1V2-trimmed SILVA database
+align.seqs(candidate=current, template=/home/FCAM/leocadio/silva/v1v2/V1V2.fas)
+####after checking the alingment, cutting those sequences with bases beyond the end of V1V2 (likely sequencing errors or leftover fragments of the oligos)
+summary.seqs(fasta=current)
+screen.seqs(fasta=current, group=current, end=5273)
+####removing all sequences that do not start at the beginning of V1V2
+screen.seqs(fasta=current, group=current, start=1)
+summary.seqs(fasta=current
+####removing sequences that after the process got shorter than 300 bp (if any)
+screen.seqs(fasta=current, group=current, minlength=300)
+summary.seqs(fasta=current)
+####create unique
+unique.seqs(fasta=current)
+summary.seqs(fasta=current, name=current)
+#remove chimeras with vsearch
+chimera.vsearch(fasta=current, name=current, group=current, dereplicate=f)
+remove.seqs(fasta=current, accnos=current, group=current, name=current, dups=t)
+summary.seqs(fasta=current, name=current)
+#pre.cluster with uniose as implemented in mothur to remove PCR errors - results are Single variants
+pre.cluster(fasta=current, name=current, group=current, diffs=1, method=unoise)
+#inflate the count file - be sure mothur is picking the precluster.count file
+count.seqs(count=current, compress=f)
+#degap sequences fromt the precluster originated fasta, and classify them using the SILVA database trimmed to V1V2
+degap.seqs(fasta=current)
+classify.seqs(fasta=current, template=/home/FCAM/leocadio/silva/v1v2/V1V2.ng.fasta, taxonomy=/home/FCAM/leocadio/silva/v1v2/TaxMap_128_V1V2.txt)
+quit()
