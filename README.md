@@ -25,6 +25,8 @@ In this GitHub, you can find :
     7. ASV_0-05.csv = metabarcoding data, number of reads per sample and their total relative abundance, for the 225 most abundant ASVs (total relative abundance on the entire studied period at least equal to 0.05%)
     8. results_byhand.csv = taxonomy retrieved from NCBI BLASTN and associated features (length of the sequences, gaps, max score…) and pieces of information about the species distribution area (possible to find it at BATS or not). 
 
+Associated mesozooplankton images can be found on EcoTaxa web application https://ecotaxa.obs-vlfr.fr/ (project ‘BATS_timeseries [4236]’, access authorisation required.
+
 * Scripts : 
   * the mothur pipeline to treat metabarcoding sequences (ts.txt)
   * all the R scripts necessary to realise the analyses and which should be run in the following order 
