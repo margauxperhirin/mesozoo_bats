@@ -16,6 +16,15 @@ $^{2}$ Bermuda Institute of Ocean Sciences, St. Georges, Bermuda
 
 In this GitHub, you can find :
 * Data : all the raw data files needed for the scripts to be run, other files will be produced during the analysis
+    1. env_data_1000m.csv = all environmental data between surface and 1000 m deep from cruises at BATS
+    2. export_raw.csv = export data measured by sediment traps for all the cruises between March 2016 and May 2017
+    3. ecotaxa_export.zip.001 = compressed .tsv file containing the dataset exported from EcoTaxa project 149, with morphological features, taxonomic category and metadata associated to each mesozooplankton scanned
+    4. ASV_abundances.zip = compressed .txt file containing raw metabarcoding data (number of reads per sequence and sample)
+    5. ASV_sequences.zip.001 = compressed .txt file containing fasta sequences for all ASVs sampled between March 2016 and May 2017
+    6. taxonomy_04-05.zip = compressed .txt file containing the taxonomy for all ASVs sampled between between March 2016 and May 2017
+    7. ASV_0-05.csv = metabarcoding data, number of reads per sample and their total relative abundance, for the 225 most abundant ASVs (total relative abundance on the entire studied period at least equal to 0.05%)
+    8. results_byhand.csv = taxonomy retrieved from NCBI BLASTN and associated features (length of the sequences, gaps, max score…) and pieces of information about the species distribution area (possible to find it at BATS or not). 
+
 * Scripts : 
   * the mothur pipeline to treat metabarcoding sequences (ts.txt)
   * all the R scripts necessary to realise the analyses and which should be run in the following order 
